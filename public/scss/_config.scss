@@ -1,0 +1,84 @@
+/*--------------------------------------------------------
+configuracion de botones
+--------------------------------------------------------*/
+.btn-dark{
+  background-color: $mainColor !important;
+  border-radius: 0 !important;
+  height: 8vh;
+  width: 120px;
+}
+
+.btn-main{
+  background-color: $SecondColor !important;
+  border-radius: 0 !important;
+  height: 8vh;
+  width: 120px;
+}
+
+//color de la barra de navegacion de busqueda
+.bg-light-y{
+  background-color: $SecondColor !important;
+}
+
+/*--------------------------------------------------------
+configuracion de error page
+--------------------------------------------------------*/
+.middle-content{
+  padding: 10rem 0rem;
+}
+
+/*--------------------------------------------------------
+cards
+--------------------------------------------------------*/
+.card {
+  padding: 15px 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-radius: 4px 4px 0 0;
+  position: relative;
+  overflow: hidden;
+  background-color: $mainColor;
+  border: none;
+  border-radius: 0px;
+  color: #fff;
+}
+
+.widget{
+  display: block;
+  font-size: 14px;
+  text-transform: uppercase;
+  background: $mainColor;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  color: #FFF;
+}
+
+/*--------------------------------------------------------
+tablas
+--------------------------------------------------------*/
+//color de tablas
+.table_color{
+  td, tr{
+    color: #FFFF !important;
+  }
+}
+//ancho de tablas-responsive
+.table-responsive{
+  width: 100%;
+}
+
+.my-custom-scrollbar {
+  position: relative;
+  height: 345px;
+  overflow: auto;
+  margin: 20px auto;
+}
+.table-wrapper-scroll-y {
+  display: block;
+}
+/*--------------------------------------------------------
+graficos
+--------------------------------------------------------*/
+.grafico{
+  padding: 10px 0px;
+}
