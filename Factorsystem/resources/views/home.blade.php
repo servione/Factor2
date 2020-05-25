@@ -6,14 +6,14 @@
 <x-navbar></x-navbar>
 
 <!-- end navbar -->
-<div class="row">
   <div class="container-fluid">
+    <div class="row">
 
     <!-- menu utilidades -->
-    <div v-if="flagutilidades == true">
+    <div v-if="flagutilidades == true" style="display: block">
       <!-- componente sidebar -->
       <x-utilidades></x-utilidades>
-    </div><!--endif-->
+    </div>
     <!-- uaf -->
     <div v-else-if="flagUAf == true">
       <x-uaf></x-uaf>
