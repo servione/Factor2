@@ -6,12 +6,58 @@
 <x-navbar></x-navbar>
 
 <!-- end navbar -->
+<div class="row">
+  <div class="container-fluid">
 
-<div class="container-fluid">
-  <div class="row">
-    <!-- componente sidebar -->
-    <!-- invocar el menu segun la seleccion del navbar termminar de hacer xD -->
-    <x-utilidades></x-utilidades>
+    <!-- menu utilidades -->
+    <div v-if="flagutilidades == true">
+      <!-- componente sidebar -->
+      <x-utilidades></x-utilidades>
+    </div><!--endif-->
+    <!-- uaf -->
+    <div v-else-if="flagUAf == true">
+      <x-uaf></x-uaf>
+    </div>
+    <!-- menu recursos humanos -->
+    <div v-else-if="flagRRHH == true">
+      <x-rrhh></x-rrhh>
+    </div>
+    <!-- menu admin -->
+    <div v-else-if="flagAdmin == true">
+      <x-admin></x-admin>
+    </div>
+    <!-- menu clientes -->
+    <div  v-else-if="flagClientes == true">
+      <x-clientes></x-clientes>
+    </div>
+    <!-- menu juridico -->
+    <div v-else-if="flagJuridico == true">
+      <x-juridico></x-juridico>
+    </div>
+    <!-- menu terceros -->
+    <div v-else-if="flagTerceros == true">
+      <x-terceros></x-terceros>
+    </div>
+    <!-- menu solicitud -->
+    <div v-else-if="flagSolicitud == true">
+      <x-solicitud></x-solicitud>
+    </div>
+    <!-- menu tesoreria -->
+    <div v-else-if="flagTesoreria == true">
+      <x-tesoreria></x-tesoreria>
+    </div>
+    <!-- menu utilidades -->
+    <div v-else-if="flagutilidades == true">
+      <x-utilidades></x-utilidades>
+    </div>
+    <!-- menu operaciones -->
+    <div v-else-if="flagOperaciones == true">
+      <x-operaciones></x-operaciones>
+    </div>
+    <!-- despliega el menu por defecto -->
+    <div v-else>
+      <x-default></x-default>
+    </div>
 
 
     <!-- end componente sidebar -->
