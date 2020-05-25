@@ -1,13 +1,14 @@
 <!-- menu con el contenido de utilidades -->
-<ul class="nav flex-column">
-  <li class="nav-item">
-    <a class="nav-link" href="#">
+<ul class="nav flex-column" id="myTab" role="tablist">
+
+  <li class="nav-item" role="presentation">
+    <a class="nav-link active" id="resibovalores-tab" data-toggle="tab" href="#resibovalores" role="tab" aria-controls="resibovalores" aria-selected="true">
       Resibo valores
     </a>
   </li>
 
   <li class="nav-item">
-    <a class="nav-link" href="#">
+    <a class="nav-link active">
       Simulador
     </a>
   </li>

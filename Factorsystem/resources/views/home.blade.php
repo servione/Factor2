@@ -78,8 +78,14 @@
       <!-- titulo de la pestaña seleccionada -->
       <x-cabecera></x-cabecera>
       <!-- end titulo -->
+
       <!-- tabs segun menu seleccionado -->
+      <div v-if="tabsUtilidades == true">
+        <x-contenido-utilidades></x-contenido-utilidades>
+      </div>
       <!-- end tabs -->
+
+
     </main>
     <!-- end menu principal -->
 

@@ -16,6 +16,8 @@ const app = new Vue({
     flagUAf: false,
     flagAdmin: false,
 
+    // tabs funciones -- segun el menu seleccionado y la opcion de sespliega el tab
+    tabsUtilidades: false,
     // otorga el titulo al dash principal segun la seleccion del navbar
     TituloMenu: 'Dashboard',
 
@@ -27,6 +29,9 @@ const app = new Vue({
 
     // despliega el menu de utilidades
     utilidades: function() {
+      // tabs
+      this.tabsUtilidades = true; 
+      // menus
       this.flagDefault = false;
       this.flagRRHH = false;
       this.flagutilidades = true;
