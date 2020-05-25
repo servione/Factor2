@@ -6,8 +6,10 @@
     <h1 class="h2">@{{ TituloMenu }}</h1>
     <div class="btn-toolbar mb-2 mb-md-0">
       <div class="btn-group mr-2">
+        <button type="button" class="btn btn-sm btn-warning"><i class="fas fa-home"></i> Inicio</button>
+      </div>
+      <div class="btn-group mr-2">
         <button type="button" class="btn btn-sm btn-warning">Tareas</button>
-        <button type="button" class="btn btn-sm btn-warning">Notificaciones</button>
       </div>
       <button type="button" class="btn btn-sm btn-warning dropdown-toggle">
         <span data-feather="calendar"></span>
