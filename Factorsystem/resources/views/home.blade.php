@@ -78,12 +78,11 @@
       <!-- titulo de la pestaña seleccionada -->
       <x-cabecera></x-cabecera>
       <!-- end titulo -->
-
-      <!-- tabs segun menu seleccionado -->
-      <div v-if="tabsUtilidades == true">
-        <x-contenido-utilidades></x-contenido-utilidades>
+      <div id="app">
+        @yield('navbar')
       </div>
-      <!-- end tabs -->
+      @yield('mainContent')
+
 
 
     </main>

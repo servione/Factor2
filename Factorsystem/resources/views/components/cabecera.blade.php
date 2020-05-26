@@ -6,7 +6,7 @@
     <h1 class="h2">@{{ TituloMenu }}</h1>
     <div class="btn-toolbar mb-2 mb-md-0">
       <div class="btn-group mr-2">
-        <button type="button" class="btn btn-sm btn-warning"><i class="fas fa-home"></i> Inicio</button>
+        <a href="{{ route('home') }}" class="btn btn-sm btn-warning"><i class="fas fa-home"></i> Inicio</a>
       </div>
       <div class="btn-group mr-2">
         <button type="button" class="btn btn-sm btn-warning">Tareas</button>
